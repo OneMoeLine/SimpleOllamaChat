@@ -10,7 +10,7 @@ This is a simple chatbot build using using [LangChain](https://github.com/langch
 ## Project Setup
 1. **Install Ollama**
   The download link is accessible at [Ollama](https://ollama.com/). For Linux and WSL users, the [manual install](https://github.com/ollama/ollama/blob/main/docs/linux.md) is recommended
-2. **Download the Phi-3-mini**
+2. **Download Phi-3-mini**
     1. Download the [phi-3-mini-4k-instruct-q4.gguf](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/blob/main/Phi-3-mini-4k-instruct-q4.gguf) file.
 
     2. Create a Phi-3-Modelfile
@@ -41,7 +41,7 @@ This is a simple chatbot build using using [LangChain](https://github.com/langch
        
         ```
         python -m venv venv
-        . venv/bin/activate
+        . venv/bin/activate  # On Windows use `venv\Scripts\activate`
         ```
    
     2. Install prerequisites
