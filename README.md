@@ -29,31 +29,31 @@ This is a simple chatbot build using using [LangChain](https://github.com/langch
       
     3. Setup the model
        
-     ```
-     ollama create phi3mini -f <location of the file e.g., ./Phi-3-Modelfile>
-     ```
-     You can interact with the model directly via the terminal through:
-     ```
-     ollama run phi3mini
-     ```
+       ```
+       ollama create phi3mini -f <location of the file e.g., ./Phi-3-Modelfile>
+       ```
+       You can interact with the model directly via the terminal through:
+       ```
+       ollama run phi3mini
+       ```
 3. **Setup environment**
     1. Create a virtual environment
        
-    ```
-    python -m venv venv
-    . venv/bin/activate
-    ```
+      ```
+      python -m venv venv
+      . venv/bin/activate
+      ```
    
     2. Install prerequisites
-    ```
-    pip install -r requirements.txt
-    ```
+      ```
+      pip install -r requirements.txt
+      ```
 
 ## Usage
 1. **Run the application**
    
-   ```
-   streamlit run app.py
-   ```
+     ```
+     streamlit run app.py
+     ```
 3. **Access the application**
    Open your web browser and navigate to http://localhost:8501.
