@@ -1,6 +1,6 @@
 # Ollama Chatbot
 
-This is a simple chatbot build using using [LangChain](https://github.com/langchain-ai/langchain) and [Streamlit](https://streamlit.io/). The chatbot leverages Microsoft's [phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct) model running on [Ollama](https://ollama.com/) for the AI responses.
+This is a simple chatbot built using [LangChain](https://github.com/langchain-ai/langchain) and [Streamlit](https://streamlit.io/). The chatbot leverages Microsoft's [phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct) model running on [Ollama](https://ollama.com/) for the AI responses.
 
 ## Features
 - **Simple user-friendly interface**: Powered by Streamlit for a simple and interactive UI with streaming responses
