@@ -15,45 +15,45 @@ This is a simple chatbot build using using [LangChain](https://github.com/langch
 
     2. Create a Phi-3-Modelfile
        
-      ```
-      vi Phi-3-Modelfile
-      ```
-      ```
-      FROM /path/to/model/Phi-3-mini-4k-instruct-q4.gguf
-      TEMPLATE """<|user|>
-      {{.Prompt}}<|end|>
-      <|assistant|>"""
-      PARAMETER stop <|end|>
-      PARAMETER num_ctx 4096
-      ```
+        ```
+        vi Phi-3-Modelfile
+        ```
+        ```
+        FROM /path/to/model/Phi-3-mini-4k-instruct-q4.gguf
+        TEMPLATE """<|user|>
+        {{.Prompt}}<|end|>
+        <|assistant|>"""
+        PARAMETER stop <|end|>
+        PARAMETER num_ctx 4096
+        ```
       
     3. Setup the model
        
-       ```
-       ollama create phi3mini -f <location of the file e.g., ./Phi-3-Modelfile>
-       ```
-       You can interact with the model directly via the terminal through:
-       ```
-       ollama run phi3mini
-       ```
+        ```
+        ollama create phi3mini -f <location of the file e.g., ./Phi-3-Modelfile>
+        ```
+        You can interact with the model directly via the terminal through:
+        ```
+        ollama run phi3mini
+        ```
 3. **Setup environment**
     1. Create a virtual environment
        
-      ```
-      python -m venv venv
-      . venv/bin/activate
-      ```
+        ```
+        python -m venv venv
+        . venv/bin/activate
+        ```
    
     2. Install prerequisites
-      ```
-      pip install -r requirements.txt
-      ```
+        ```
+        pip install -r requirements.txt
+        ```
 
 ## Usage
 1. **Run the application**
    
-     ```
-     streamlit run app.py
-     ```
+    ```
+    streamlit run app.py
+    ```
 3. **Access the application**
    Open your web browser and navigate to http://localhost:8501.
