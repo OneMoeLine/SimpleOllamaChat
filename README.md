@@ -34,10 +34,10 @@ Download Ollama from [Ollama](https://ollama.com/). For Linux and WSL users, ref
 
     ```plaintext
     FROM /path/to/model/Phi-3-mini-4k-instruct-q4.gguf
-    TEMPLATE """
-    {{.Prompt}}
-    """
-    PARAMETER stop 
+    TEMPLATE """<|user|>
+    {{.Prompt}}<|end|>
+    <|assistant|>"""
+    PARAMETER stop <|end|>
     PARAMETER num_ctx 4096
     ```
 
